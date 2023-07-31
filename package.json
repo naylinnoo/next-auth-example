@@ -22,12 +22,14 @@
     "next": "latest",
     "next-auth": "latest",
     "next-connect": "^1.0.0",
+    "passport-local": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/jsonwebtoken": "^9.0.2",
     "@types/node": "^18.16.2",
+    "@types/passport-local": "^1.0.35",
     "@types/react": "^18.2.0",
     "typescript": "^5.0.4"
   }

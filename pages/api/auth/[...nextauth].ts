@@ -5,7 +5,6 @@ import FacebookProvider from "next-auth/providers/facebook"
 import GithubProvider from "next-auth/providers/github"
 import TwitterProvider from "next-auth/providers/twitter"
 import Auth0Provider from "next-auth/providers/auth0"
-import tokenProvider from "./tokenProvider"
 var jwt = require('jsonwebtoken');
 
 const secret = process.env.NEXTAUTH_SECRET;
@@ -126,10 +125,10 @@ CredentialsProvider({
     //   clientId: process.env.GITHUB_ID,
     //   clientSecret: process.env.GITHUB_SECRET,
     // }),
-    // GoogleProvider({
-    //   clientId: process.env.GOOGLE_ID,
-    //   clientSecret: process.env.GOOGLE_SECRET,
-    // }),
+    GoogleProvider({
+      clientId: process.env.GOOGLE_ID,
+      clientSecret: process.env.GOOGLE_SECRET,
+    }),
     // TwitterProvider({
     //   clientId: process.env.TWITTER_ID,
     //   clientSecret: process.env.TWITTER_SECRET,
